@@ -5,7 +5,7 @@ locals {
   }
 }
 
-varaible "inst_type" {}
+variable "inst_type" {}
 
 resource "aws_instance" "myinst" {
   ami           = var.ami_id
