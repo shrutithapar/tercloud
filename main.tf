@@ -7,7 +7,7 @@ locals {
 
 resource "aws_instance" "myinst" {
   ami           = var.ami_id
-  instance_type = "t2.micro"
+  instance_type = var.inst_type
 
   tags = local.tags
 }
